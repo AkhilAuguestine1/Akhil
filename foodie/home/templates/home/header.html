@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% load static %}
+        <link href="{% static "home/css/bootstrap.min.css" %}" rel="stylesheet">
+    </head>
+    <body>
+      <div class="container-fluid">
+            {% include "home/includes/navbar.html" %}
+
+            {% include "home/includes/messages.html" %}
+
+                    {% block content %}
+                    {% endblock %}
+
+      </div>
+        <script src="{% static "home/js/jquery-3.3.1.min.js" %}"></script>
+        <script src="{% static "home/js/bootstrap.min.js" %}"></script>
+    </body>
+</html>

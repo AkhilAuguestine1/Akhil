@@ -1,0 +1,7 @@
+{% extends 'home/header.html' %}
+
+{% block content %}
+{% for u in users %}
+    {{ u.email }}
+{% endfor %}
+{% endblock %}
